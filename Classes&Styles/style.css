@@ -1,0 +1,29 @@
+
+.a {
+    color: #FEBCC8;
+}
+
+.b {
+    color: #FFFFD8;
+}
+
+.c {
+    color: #EAEBFF;
+}
+
+.d {
+    color: #E0FEFE;
+}
+
+.e {
+    color: #D3EEFF;
+}
+
+p {
+    text-align: center;
+    font-size: 24px;
+}
+
+body{
+    background-color: #616E7C;
+}
