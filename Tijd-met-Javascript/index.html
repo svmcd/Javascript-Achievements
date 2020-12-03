@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS les 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Tijd met javaScript</h1>
+    <input type="button" value="klik op me" id="button"/>
+
+    <script>
+        let button = document.getElementById('button');
+        button.addEventListener('click', ()=>{
+            let datum = new Date();
+            window.alert(datum + "\nHoi, ik ben Samed en zit op het Mediacollege Amsterdam");
+        })
+    </script>
+
+</body>
+</html>

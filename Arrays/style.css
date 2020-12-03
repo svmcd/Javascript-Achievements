@@ -1,0 +1,41 @@
+body{
+    background-color: #616E7C;
+    color: black;
+    font-weight: bold;
+    font-family:  Courier, monospace;
+    font-size: 450%;
+    text-align: center;
+    margin-top: 0%;
+}
+
+div::first-letter {
+    font-size: 150%;
+    color: white;
+}
+
+#myButton, #myReset {
+    background-color: black;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+    display: block;
+    font-size: 30%;
+    border-radius: 10%;
+}
+
+#myButton:hover, #myReset:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 20%;
+}
+
+.container {
+    vertical-align: top;
+    display: inline-block;
+}
+
+img {
+    cursor: pointer;
+    margin-top: 20%;
+}
