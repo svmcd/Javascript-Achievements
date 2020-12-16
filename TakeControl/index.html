@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Take Control</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let alleBlokjes, button1, button2, button3, button4;
+
+        let start = () => {
+            alleBlokjes = document.querySelectorAll("div");
+
+            button1 = document.getElementById("button1");
+            button1.addEventListener("click", maakRood);
+
+            button2 = document.getElementById("button2");
+            button2.addEventListener("click", maakWit );
+
+            button3 = document.getElementById("button3");
+            button3.addEventListener("click", maakGroter);
+
+            button4 = document.getElementById("button4");
+            button4.addEventListener("click", maakRond );
+        };
+
+        let maakRood = () => {
+            for (let i = 0; i < alleBlokjes.length; i++) {
+                let ditBlokje = alleBlokjes[i];
+                ditBlokje.className = "blokje--rood";
+            }
+        };
+        let maakWit = () => {
+            for (let i = 0; i < alleBlokjes.length; i++) {
+                let ditBlokje = alleBlokjes[i];
+                ditBlokje.className = "blokje--wit";
+            }
+        };
+        let maakGroter = () => {
+            for (let i = 0; i < alleBlokjes.length; i++) {
+                let ditBlokje = alleBlokjes[i];
+                ditBlokje.className = "blokje--groter";
+            }
+        };
+        let maakRond = () => {
+            for (let i = 0; i < alleBlokjes.length; i++) {
+                let ditBlokje = alleBlokjes[i];
+                ditBlokje.className = "blokje--rond";
+            }
+        };
+
+        document.addEventListener("DOMContentLoaded", start);
+    </script>
+</head>
+
+<body>
+    <section class="blokjes">
+        <div>blok</div>
+        <div>blok</div>
+        <div>blok</div>
+        <div>blok</div>
+        <div>blok</div>
+    </section>
+    <section class="buttons"> 
+        <button id="button1">Maak rood</button>
+        <button id="button2">Maak wit</button>
+        <button id="button3">Maak groter</button>
+        <button id="button4">Maak rond</button>
+    </section>
+</body>
+
+</html>
